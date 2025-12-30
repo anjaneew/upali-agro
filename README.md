@@ -8,7 +8,7 @@ A modern e-commerce web application showcasing authentic Sri Lankan spices, medi
 
 Upali Agro is a portfolio project demonstrating modern frontend development practices through an e-commerce platform for Sri Lankan agricultural products. The application features 40+ carefully curated products including premium Ceylon cinnamon, cardamom, essential oils, and traditional medicinal herbs.
 
-![search input](searchinput.png)
+
 
 
 ## Key highlights:
@@ -80,6 +80,7 @@ CSS Modules are implemented across all components to prevent style conflicts and
 * ESLint + TypeScript ESLint
 * Vite (built)
 
+![search input](searchinput.png)
 
 ## 📁 Project Structure
 
