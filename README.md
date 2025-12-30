@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# 🛒 Upali Agro - Sri Lankan Spices E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce web application showcasing authentic Sri Lankan spices, medicinal herbs, aromatics, and specialty food products. Built with React, TypeScript, and CSS Modules.
 
-Currently, two official plugins are available:
+![desktop view](download.png)
+![search input](searchinput.png)
+![price range](pricerange.png)
+## 🌿 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Upali Agro is a portfolio project demonstrating modern frontend development practices through an e-commerce platform for Sri Lankan agricultural products. The application features 40+ carefully curated products including premium Ceylon cinnamon, cardamom, essential oils, and traditional medicinal herbs.
 
-## React Compiler
+## Key highlights:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Advanced multi-criteria filtering system (search, category, price)
+*  Fully typed with TypeScript for type safety
+* Modular component architecture with CSS Modules
+* Responsive design for mobile and desktop
+* Rich product descriptions with cultural and medicinal information
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Core Functionality
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Real-time Search - Case-insensitive text search across product titles
+* Category Filtering - Filter by Spices, Medicine, Aromatics, Luxury Items, and Cooking Ingredients
+* Price Range Filtering - Five price tiers from under €2 to over €50
+* Multi-filter Support - Combine search, category, and price filters simultaneously
+* Responsive Product Cards - Detailed product information with expandable descriptions
+* Fixed Sidebar Navigation - Always-accessible filter controls
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Product Catalog
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* 40+ authentic Sri Lankan products
+* High-quality product images
+* Bilingual product names (English/Sinhala)
+* Detailed descriptions including:
+  - Traditional uses in Sri Lankan cuisine
+  - Medicinal properties and Ayurvedic benefits
+  - Cultural significance
+  - Weight and pricing information
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Frontend Framework:
+
+* React 19 (Functional Components + Hooks)
+* TypeScript 
+* Vite (Build Tool)
+
+### State Management:
+
+* React useState Hook
+* Props drilling for component communication
+
+### Other Tools:
+
+* React Icons
+* ESLint + TypeScript ESLint
+* Vite (built)
+
+
+## 📁 Project Structure
+src/
+├── components/
+│   ├── card/
+│   │   ├── Card.tsx
+│   │   └── Card.module.css
+│   ├── input/
+│   │   ├── Input.tsx
+│   │   └── Input.module.css
+│   ├── navigation/
+│   │   ├── Navigation.tsx
+│   │   └── Navigation.module.css
+│   ├── products/
+│   │   ├── Products.tsx
+│   │   └── Products.module.css
+│   ├── sidebar/
+│   │   ├── Sidebar.tsx
+│   │   ├── Sidebar.module.css
+│   │   ├── category/
+│   │   │   ├── Category.tsx
+│   │   │   └── Category.module.css
+│   │   └── price/
+│   │       ├── Price.tsx
+│   │       └── Price.module.css
+│   ├── recommended/ (planned feature)
+│   └── Button.tsx
+├── data/
+│   └── Data.ts (Product catalog with TypeScript types)
+├── App.tsx (Main application logic)
+└── index.css (Global styles)
+
+## 🔮 Future Enhancements
+Planned features for future iterations:
+
+* Add to cart functionality
+* Recommended pages
+* React-Router pages 
+* Backend Integration
